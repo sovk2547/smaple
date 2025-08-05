@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<IsAspireHost>true</IsAspireHost>
+		<UserSecretsId>4c428a77-3fa8-4e13-a86e-9382e680924a</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Aspire.Hosting.AppHost" Version="8.2.1" />
+		<PackageReference Include="Aspire.Hosting.PostgreSQL" Version="8.2.1" /><!-- DBMS 관계형(index) 데이터베이스 -->
+		<PackageReference Include="Aspire.Hosting.RabbitMQ" Version="8.2.1" /><!-- 메세지큐(순차적 메세지), 메시지 이벤트(비동기 메세지) -->
+		<PackageReference Include="Aspire.Hosting.Redis" Version="8.2.1" /><!-- 캐시(해시) 데이터 베이스 -->
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\WebApp\WebApp\WebApp.csproj" />
+	</ItemGroup>
+
+</Project>

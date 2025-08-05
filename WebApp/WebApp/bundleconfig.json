@@ -1,0 +1,10 @@
+[
+  {
+    "outputFileName": "wwwroot/css/web.min.css",
+    "inputFiles": [
+        "wwwroot/css/font.css",
+        "wwwroot/css/layout.css",
+        "wwwroot/css/main.css"
+    ]
+  }
+]

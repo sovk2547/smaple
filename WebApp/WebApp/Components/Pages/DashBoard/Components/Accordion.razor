@@ -1,0 +1,199 @@
+﻿@layout DashBoardLayout
+@page "/dashboard/components/accordion"
+
+<div class="components">
+
+	<div>
+		<div class="components__title">Accordion</div>
+		<div class="components-list">
+			<div>
+				<div class="components__text">Primary Basic</div>
+				<div class="accordion accordion--primary">
+					@for (var i = 0; i < 3; i++)
+					{
+						<div class="accordion-item">
+							<div class="accordion-toggle" onclick="accordion_toggle(event);">
+								<div class="accordion-toggle-info">
+									<div class="accordion-toggle__title">Accordion @i</div>
+								</div>
+								<div class="accordion-toggle__arrow"><span class="material-icons">expand_more</span></div>
+							</div>
+							<div class="accordion-menu">
+								<div class="accordion-toggle">
+									<div class="accordion-toggle-info">
+										<div class="accordion-toggle__text">Lemon drops chocolate cake gummies carrot cake chupa chups muffin topping. Sesame snaps icing marzipan gummi bears macaroon dragée danish caramels powder. Bear claw dragée pastry topping soufflé. Wafer gummi bears marshmallow pastry pie.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					}
+				</div>
+
+			</div>
+			<div>
+				<div class="components__text">Primary Without Arrow</div>
+				<div class="accordion accordion--primary">
+					@for (var i = 0; i < 3; i++)
+					{
+						<div class="accordion-item">
+							<div class="accordion-toggle" onclick="accordion_toggle(event);">
+								<div class="accordion-toggle-info">
+									<div class="accordion-toggle__title">Accordion @i</div>
+								</div>
+							</div>
+							<div class="accordion-menu">
+								<div class="accordion-toggle">
+									<div class="accordion-toggle-info">
+										<div class="accordion-toggle__text">Lemon drops chocolate cake gummies carrot cake chupa chups muffin topping. Sesame snaps icing marzipan gummi bears macaroon dragée danish caramels powder. Bear claw dragée pastry topping soufflé. Wafer gummi bears marshmallow pastry pie.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					}
+				</div>
+			</div>
+			<div>
+				<div class="components__text">Primary With Subtitle</div>
+				<div class="accordion accordion--primary">
+					@for (var i = 0; i < 3; i++)
+					{
+						<div class="accordion-item">
+							<div class="accordion-toggle" onclick="accordion_toggle(event);">
+								<div class="accordion-toggle-info">
+									<div class="accordion-toggle__title">Accordion @i</div>
+									<div class="accordion-toggle__subtitle">Press to expand</div>
+								</div>
+								<div class="accordion-toggle__arrow"><span class="material-icons">expand_more</span></div>
+							</div>
+							<div class="accordion-menu">
+								<div class="accordion-toggle">
+									<div class="accordion-toggle-info">
+										<div class="accordion-toggle__text">Lemon drops chocolate cake gummies carrot cake chupa chups muffin topping. Sesame snaps icing marzipan gummi bears macaroon dragée danish caramels powder. Bear claw dragée pastry topping soufflé. Wafer gummi bears marshmallow pastry pie.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					}
+				</div>
+			</div>
+			<div>
+				<div class="components__text">Primary With Icon</div>
+				<div class="accordion accordion--primary">
+					@for (var i = 0; i < 3; i++)
+					{
+						<div class="accordion-item">
+							<div class="accordion-toggle" onclick="accordion_toggle(event);">
+								<div class="accordion-toggle__icon"><span class="material-icons">mic</span></div>
+								<div class="accordion-toggle-info">
+									<div class="accordion-toggle__title">Accordion @i</div>
+								</div>
+								<div class="accordion-toggle__arrow"><span class="material-icons">expand_more</span></div>
+							</div>
+							<div class="accordion-menu">
+								<div class="accordion-toggle">
+									<div class="accordion-toggle-info">
+										<div class="accordion-toggle__text">Lemon drops chocolate cake gummies carrot cake chupa chups muffin topping. Sesame snaps icing marzipan gummi bears macaroon dragée danish caramels powder. Bear claw dragée pastry topping soufflé. Wafer gummi bears marshmallow pastry pie.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					}
+				</div>
+			</div>
+			<div>
+				<div class="components__text">Secondary Basic</div>
+				<div class="accordion accordion--secondary">
+					@for (var i = 0; i < 3; i++)
+					{
+						<div class="accordion-item">
+							<div class="accordion-toggle" onclick="accordion_toggle(event);">
+								<div class="accordion-toggle-info">
+									<div class="accordion-toggle__title">Accordion @i</div>
+								</div>
+								<div class="accordion-toggle__arrow"><span class="material-icons">expand_more</span></div>
+							</div>
+							<div class="accordion-menu">
+								<div class="accordion-toggle">
+									<div class="accordion-toggle-info">
+										<div class="accordion-toggle__text">Lemon drops chocolate cake gummies carrot cake chupa chups muffin topping. Sesame snaps icing marzipan gummi bears macaroon dragée danish caramels powder. Bear claw dragée pastry topping soufflé. Wafer gummi bears marshmallow pastry pie.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					}
+				</div>
+			</div>
+			<div>
+				<div class="components__text">Secondary Without Arrow</div>
+				<div class="accordion accordion--secondary">
+					@for (var i = 0; i < 3; i++)
+					{
+						<div class="accordion-item">
+							<div class="accordion-toggle" onclick="accordion_toggle(event);">
+								<div class="accordion-toggle-info">
+									<div class="accordion-toggle__title">Accordion @i</div>
+								</div>
+							</div>
+							<div class="accordion-menu">
+								<div class="accordion-toggle">
+									<div class="accordion-toggle-info">
+										<div class="accordion-toggle__text">Lemon drops chocolate cake gummies carrot cake chupa chups muffin topping. Sesame snaps icing marzipan gummi bears macaroon dragée danish caramels powder. Bear claw dragée pastry topping soufflé. Wafer gummi bears marshmallow pastry pie.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					}
+				</div>
+			</div>
+			<div>
+				<div class="components__text">Secondary With Subtitle</div>
+				<div class="accordion accordion--secondary">
+					@for (var i = 0; i < 3; i++)
+					{
+						<div class="accordion-item">
+							<div class="accordion-toggle" onclick="accordion_toggle(event);">
+								<div class="accordion-toggle-info">
+									<div class="accordion-toggle__title">Accordion @i</div>
+									<div class="accordion-toggle__subtitle">Press to expand</div>
+								</div>
+								<div class="accordion-toggle__arrow"><span class="material-icons">expand_more</span></div>
+							</div>
+							<div class="accordion-menu">
+								<div class="accordion-toggle">
+									<div class="accordion-toggle-info">
+										<div class="accordion-toggle__text">Lemon drops chocolate cake gummies carrot cake chupa chups muffin topping. Sesame snaps icing marzipan gummi bears macaroon dragée danish caramels powder. Bear claw dragée pastry topping soufflé. Wafer gummi bears marshmallow pastry pie.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					}
+				</div>
+			</div>
+			<div>
+				<div class="components__text">Secondary With Icon</div>
+				<div class="accordion accordion--secondary">
+					@for (var i = 0; i < 3; i++)
+					{
+						<div class="accordion-item">
+							<div class="accordion-toggle" onclick="accordion_toggle(event);">
+								<div class="accordion-toggle__icon"><span class="material-icons">mic</span></div>
+								<div class="accordion-toggle-info">
+									<div class="accordion-toggle__title">Accordion @i</div>
+								</div>
+								<div class="accordion-toggle__arrow"><span class="material-icons">expand_more</span></div>
+							</div>
+							<div class="accordion-menu">
+								<div class="accordion-toggle">
+									<div class="accordion-toggle-info">
+										<div class="accordion-toggle__text">Lemon drops chocolate cake gummies carrot cake chupa chups muffin topping. Sesame snaps icing marzipan gummi bears macaroon dragée danish caramels powder. Bear claw dragée pastry topping soufflé. Wafer gummi bears marshmallow pastry pie.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					}
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>

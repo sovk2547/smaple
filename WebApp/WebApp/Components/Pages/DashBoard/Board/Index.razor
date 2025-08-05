@@ -1,0 +1,251 @@
+﻿@layout DashBoardLayout
+@page "/dashboard/board"
+
+<div class="article-head">
+	<div>
+		<div class="article-head-breadcrumb">
+			<div>
+				<div class="article-head-breadcrumb__text">Home</div>
+			</div>
+			<div>
+				<div class="article-head-breadcrumb__text">Home</div>
+			</div>
+		</div>
+	</div>
+	<div>
+		<div class="article-head-filter">
+			filter
+		</div>
+	</div>
+</div>
+
+<div class="file">
+	<div class="file-list">
+		@for (var i = 0; i < 24; i++)
+		{
+			<div>
+				<div class="input-checkbox">
+					<label>
+						<input type="checkbox" />
+						<div class="input-checkbox__box"><span class="material-icons">done</span></div>
+					</label>
+				</div>
+				<div class="file__icon"><span class="material-icons">folder</span></div>
+				<div class="file-info">
+					<div class="file__title text-ellipsis">FolderName</div>
+					<div class="file__text text-ellipsis">1개 파일</div>
+				</div>
+			</div>
+		}
+	</div>
+	<div class="file-foot">
+		<div>
+			<div class="file-foot__text">Showing 1 to 10 of 12 entries</div>
+		</div>
+		<div>
+			<div class="page">
+				<div class="page-arrow"><span class="material-icons">chevron_left</span></div>
+				<div class="page-num">
+					<div class="active">1</div>
+					<div>2</div>
+					<div>3</div>
+					<div>4</div>
+				</div>
+				<div class="page-arrow"><span class="material-icons">chevron_right</span></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="album">
+	<div class="album-list">
+		@for (var i = 0; i < 5; i++)
+		{
+			<div>
+				<div class="album__img"><img src="https://html.themeholy.com/edmate/assets/images/thumbs/mentor-cover-img5.png" /></div>
+				<div class="album-info">
+					<div>test</div>
+				</div>
+			</div>
+		}
+	</div>
+	<div class="album-foot">
+		<div>
+			<div class="album-foot__text">Showing 1 to 10 of 12 entries</div>
+		</div>
+		<div>
+			<div class="page">
+				<div class="page-arrow"><span class="material-icons">chevron_left</span></div>
+				<div class="page-num">
+					<div class="active">1</div>
+					<div>2</div>
+					<div>3</div>
+					<div>4</div>
+				</div>
+				<div class="page-arrow"><span class="material-icons">chevron_right</span></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="board">
+	<div class="board-head">
+		<div class="board--w20">
+			<div class="input-checkbox">
+				<label>
+					<input type="checkbox" />
+					<div class="input-checkbox__box"><span class="material-icons">done</span></div>
+				</label>
+			</div>
+		</div>
+		<div>
+			<div class="board__title">제목</div>
+		</div>
+		<div class="board--w100 board--center">
+			<div class="board__title">작성자</div>
+		</div>
+		<div class="board--w100 board--center">
+			<div class="board__title">날짜</div>
+		</div>
+	</div>
+	<div class="board-list">
+		@for (var i = 0; i < 5; i++)
+		{
+			<div>
+				<div class="board--w20">
+					<div class="input-checkbox">
+						<label>
+							<input type="checkbox" />
+							<div class="input-checkbox__box"><span class="material-icons">done</span></div>
+						</label>
+					</div>
+				</div>
+				<div>
+					<div class="board__text text-ellipsis">제목</div>
+				</div>
+				<div class="board--w100 board--center">
+					<div class="board__text text-ellipsis">작성자 작성자작성자작성자작성자</div>
+				</div>
+				<div class="board--w100 board--center">
+					<div class="board__text text-ellipsis">날짜</div>
+				</div>
+			</div>
+		}
+	</div>
+	<div class="board-foot">
+		<div>
+			<div class="board-foot__text">Showing 1 to 10 of 12 entries</div>
+		</div>
+		<div>
+			<div class="page">
+				<div class="page-arrow"><span class="material-icons">chevron_left</span></div>
+				<div class="page-num">
+					<div class="active">1</div>
+					<div>2</div>
+					<div>3</div>
+					<div>4</div>
+				</div>
+				<div class="page-arrow"><span class="material-icons">chevron_right</span></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="message">
+	<div class="message-left">
+		<div>
+			<div class="message-search">
+				<div class="message-search__icon"><span class="material-icons">search</span></div>
+				<div class="message-search__input"><input type="text" placeholder="Search..." /></div>
+			</div>
+		</div>
+		<div class="message-list">
+			<div class="message-profile active">
+				<div class="message-profile__thumbs"><span class="material-icons">person</span></div>
+				<div class="message-profile-content">
+					<div class="message-profile__title text-ellipsis">홍길동</div>
+					<div class="message-profile__caption text-ellipsis">안녕하세요. OOO 입니다. 문의주신 내용 전달 드립니다.</div>
+				</div>
+			</div>
+			@for (var i = 0; i < 10; i++)
+			{
+				<div class="message-profile">
+					<div class="message-profile__thumbs"><span class="material-icons">person</span></div>
+					<div class="message-profile-content">
+						<div class="message-profile__title text-ellipsis">홍길동</div>
+						<div class="message-profile__caption text-ellipsis">안녕하세요. OOO 입니다. 문의주신 내용 전달 드립니다.</div>
+					</div>
+				</div>
+			}
+		</div>
+	</div>
+	<div class="message-right">
+		<div class="message-head">
+			<div>
+				<div class="message-profile">
+					<div class="message-profile__thumbs"><span class="material-icons">person</span></div>
+					<div class="message-profile-content">
+						<div class="message-profile__title text-ellipsis">홍길동</div>
+						<div class="message-profile__caption text-ellipsis">온라인</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				test
+			</div>
+		</div>
+		<div class="message-chat">
+			<div class="message-chat--me">
+				<div class="message-chat-content">
+					<div class="message-chat__text">Lorem ipsum dolor sit amet consectetur. Cursus vulputate eget ullamcorper bibendum pulvinar sed at libero. Vulputate amet fermentum sapien amet tempus ac donec.</div>
+					<div class="message-chat__caption">10 min ago</div>
+				</div>
+				<div class="message-chat__thumbs"><span class="material-icons">person</span></div>
+			</div>
+			<div class="message-chat--you">
+				<div class="message-chat__thumbs"><span class="material-icons">person</span></div>
+				<div class="message-chat-content">
+					<div class="message-chat__text">Lorem ipsum dolor sit amet consectetur. Cursus vulputate eget ullamcorper bibendum pulvinar sed at libero. Vulputate amet fermentum sapien amet tempus ac donec.</div>
+					<div class="message-chat__caption">10 min ago</div>
+				</div>
+			</div>
+			<div class="message-chat--you">
+				<div class="message-chat__thumbs"><span class="material-icons">person</span></div>
+				<div class="message-chat-content">
+					<div class="message-chat__text">Lorem ipsum dolor sit amet consectetur. Cursus vulputate eget ullamcorper bibendum pulvinar sed at libero. Vulputate amet fermentum sapien amet tempus ac donec.</div>
+					<div class="message-chat__caption">10 min ago</div>
+				</div>
+			</div>
+			<div class="message-chat--me">
+				<div class="message-chat-content">
+					<div class="message-chat__text">Lorem ipsum dolor sit amet consectetur. Cursus vulputate eget ullamcorper bibendum pulvinar sed at libero. Vulputate amet fermentum sapien amet tempus ac donec.</div>
+					<div class="message-chat__caption">10 min ago</div>
+				</div>
+				<div class="message-chat__thumbs"><span class="material-icons">person</span></div>
+			</div>
+			<div class="message-chat--you">
+				<div class="message-chat__thumbs"><span class="material-icons">person</span></div>
+				<div class="message-chat-content">
+					<div class="message-chat__text">Hello Mac</div>
+					<div class="message-chat__text">Lorem ipsum dolor sit amet consectetur. Cursus vulputate eget ullamcorper bibendum pulvinar sed at libero. Vulputate amet fermentum sapien amet tempus ac donec.</div>
+					<div class="message-chat__caption">10 min ago</div>
+				</div>
+			</div>
+			<div class="message-chat--me">
+				<div class="message-chat-content">
+					<div class="message-chat__text">...</div>
+					<div class="message-chat__caption">10 min ago</div>
+				</div>
+				<div class="message-chat__thumbs"><span class="material-icons">person</span></div>
+			</div>
+		</div>
+		<div class="message-input">
+			<div class="message-input__file"><span class="material-icons">add</span></div>
+			<div class="message-input-text">
+				<div class="message-input-text__input"><input type="text" placeholder="Type your message..." /></div>
+			</div>
+			<div class="message-input__file"><span class="material-icons">mic</span></div>
+			<div class="message-input__btn">보내기</div>
+		</div>
+	</div>
+</div>

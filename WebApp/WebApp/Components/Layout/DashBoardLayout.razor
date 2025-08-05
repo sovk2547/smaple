@@ -1,0 +1,466 @@
+﻿@inherits LayoutComponentBase
+
+<style>
+	html {
+		height: 100%;
+	}
+
+	body {
+		height: 100%;
+	}
+</style>
+
+<main class="dashboard" data-theme="light">
+	<aside class="aside">
+		<div class="aside-logo">
+			<div class="aside-logo__icon"><span class="material-icons">polymer</span></div>
+			<div class="aside-logo__text">MadeInReal</div>
+		</div>
+		<div class="aside-content">
+			<div class="aside-dropdown">
+				<div class="aside-dropdown-list">
+
+					<div class="aside-dropdown-item">
+						<div class="aside-dropdown-toggle">
+							<div class="aside-dropdown-toggle__icon"><span class="material-icons">dashboard</span></div>
+							<div class="aside-dropdown-toggle__text">대시보드</div>
+						</div>
+					</div>
+					<div class="aside-dropdown-item">
+						<div class="aside-dropdown-toggle" onclick="dashboard_aside_dropdown_toggle(event);">
+							<div class="aside-dropdown-toggle__icon"><span class="material-icons">device_hub</span></div>
+							<div class="aside-dropdown-toggle__text">지점(네트워크)</div>
+							<div class="aside-dropdown-other">
+								<div class="aside-dropdown-toggle__icon"><span class="material-icons">chevron_right</span></div>
+							</div>
+						</div>
+						<div class="aside-dropdown-menu">
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">MadeInReal 강남점</div>
+							</div>
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">MadeInReal 동대문점</div>
+							</div>
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">Automedi 동대문점</div>
+							</div>
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">새 홈페이지</div>
+							</div>
+						</div>
+					</div>
+					<div class="aside-dropdown-item">
+						<div class="aside-dropdown-toggle" onclick="dashboard_aside_dropdown_toggle(event);">
+							<div class="aside-dropdown-toggle__icon"><span class="material-icons">hub</span></div>
+							<div class="aside-dropdown-toggle__text">CRM</div>
+							<div class="aside-dropdown-other">
+								<div class="aside-dropdown-toggle__num">4</div>
+								<div class="aside-dropdown-toggle__icon"><span class="material-icons">chevron_right</span></div>
+							</div>
+						</div>
+						<div class="aside-dropdown-menu">
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">예약</div>
+								<div class="aside-dropdown-other">
+									<div class="aside-dropdown-menu__dot"></div>
+								</div>
+							</div>
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">상품</div>
+							</div>
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">장비</div>
+							</div>
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">의료진</div>
+							</div>
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">스케줄 달력</div>
+							</div>
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">협업 도구</div>
+							</div>
+						</div>
+					</div>
+					<div class="aside-dropdown-item">
+						<div class="aside-dropdown-toggle" onclick="dashboard_aside_dropdown_toggle(event);">
+							<div class="aside-dropdown-toggle__icon"><span class="material-icons">travel_explore</span></div>
+							<div class="aside-dropdown-toggle__text">SEO</div>
+							<div class="aside-dropdown-other">
+								<div class="aside-dropdown-toggle__icon"><span class="material-icons">chevron_right</span></div>
+							</div>
+						</div>
+						<div class="aside-dropdown-menu">
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">마케팅</div>
+							</div>
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">광고 / 키워드</div>
+							</div>
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">부정클릭</div>
+							</div>
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">방문 / 전환</div>
+							</div>
+						</div>
+					</div>
+					<div class="aside-dropdown-item">
+						<div class="aside-dropdown-toggle" onclick="dashboard_aside_dropdown_toggle(event);">
+							<div class="aside-dropdown-toggle__icon"><span class="material-icons">web</span></div>
+							<div class="aside-dropdown-toggle__text">홈페이지</div>
+							<div class="aside-dropdown-other">
+								<div class="aside-dropdown-toggle__icon"><span class="material-icons">chevron_right</span></div>
+							</div>
+						</div>
+						<div class="aside-dropdown-menu">
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">사이트맵</div>
+							</div>
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">레이아웃</div>
+							</div>
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">팝업</div>
+							</div>
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">게시판</div>
+							</div>
+						</div>
+					</div>
+					<div class="aside-dropdown-item">
+						<div class="aside-dropdown-toggle" onclick="dashboard_aside_dropdown_toggle(event);">
+							<div class="aside-dropdown-toggle__icon"><span class="material-icons">textsms</span></div>
+							<div class="aside-dropdown-toggle__text">메세지</div>
+							<div class="aside-dropdown-other">
+								<div class="aside-dropdown-toggle__icon"><span class="material-icons">chevron_right</span></div>
+							</div>
+						</div>
+						<div class="aside-dropdown-menu">
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">발송</div>
+							</div>
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">템플릿</div>
+							</div>
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">이력</div>
+							</div>
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">설정</div>
+							</div>
+						</div>
+					</div>
+					<div class="aside-dropdown-item">
+						<div class="aside-dropdown-toggle" onclick="dashboard_aside_dropdown_toggle(event);">
+							<div class="aside-dropdown-toggle__icon"><span class="material-icons">people</span></div>
+							<div class="aside-dropdown-toggle__text">계정</div>
+							<div class="aside-dropdown-other">
+								<div class="aside-dropdown-toggle__icon"><span class="material-icons">chevron_right</span></div>
+							</div>
+						</div>
+						<div class="aside-dropdown-menu">
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">관리자</div>
+							</div>
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">유저</div>
+							</div>
+						</div>
+					</div>
+					<div class="aside-dropdown-item">
+						<div class="aside-dropdown-toggle">
+							<div class="aside-dropdown-toggle__icon"><span class="material-icons">query_stats</span></div>
+							<div class="aside-dropdown-toggle__text">통계</div>
+						</div>
+					</div>
+					<div class="aside-dropdown-item">
+						<div class="aside-dropdown-toggle">
+							<div class="aside-dropdown-toggle__icon"><span class="material-icons">cloud</span></div>
+							<div class="aside-dropdown-toggle__text">사진 / 파일 관리</div>
+						</div>
+					</div>
+					<div class="aside-dropdown-item">
+						<div class="aside-dropdown-toggle">
+							<div class="aside-dropdown-toggle__icon"><span class="material-icons">sell</span></div>
+							<div class="aside-dropdown-toggle__text">플랜</div>
+						</div>
+					</div>
+					<div class="aside-dropdown-item">
+						<div class="aside-dropdown-toggle" onclick="dashboard_aside_dropdown_toggle(event);">
+							<div class="aside-dropdown-toggle__icon"><span class="material-icons">tune</span></div>
+							<div class="aside-dropdown-toggle__text">환경 설정</div>
+							<div class="aside-dropdown-other">
+								<div class="aside-dropdown-toggle__icon"><span class="material-icons">chevron_right</span></div>
+							</div>
+						</div>
+						<div class="aside-dropdown-menu">
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">홈페이지</div>
+							</div>
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">API</div>
+							</div>
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">보안</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="aside-dropdown-list">
+
+					<div class="aside-dropdown-item">
+						<div class="aside-dropdown-toggle">
+							<div class="aside-dropdown-toggle__icon"><span class="material-icons">manage_accounts</span></div>
+							<div class="aside-dropdown-toggle__text">내 계정 설정</div>
+						</div>
+					</div>
+					<div class="aside-dropdown-item">
+						<div class="aside-dropdown-toggle" onclick="dashboard_aside_dropdown_toggle(event);">
+							<div class="aside-dropdown-toggle__icon"><span class="material-icons">support_agent</span></div>
+							<div class="aside-dropdown-toggle__text">고객센터</div>
+							<div class="aside-dropdown-other">
+								<div class="aside-dropdown-toggle__num">2</div>
+								<div class="aside-dropdown-toggle__icon"><span class="material-icons">chevron_right</span></div>
+							</div>
+						</div>
+						<div class="aside-dropdown-menu">
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">업데이트</div>
+								<div class="aside-dropdown-other">
+									<div class="aside-dropdown-menu__dot"></div>
+								</div>
+							</div>
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">공지사항</div>
+								<div class="aside-dropdown-other">
+									<div class="aside-dropdown-menu__dot"></div>
+								</div>
+							</div>
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">FAQ</div>
+							</div>
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">채팅 상담</div>
+							</div>
+							<div>
+								<div class="aside-dropdown-menu__icon"><span class="material-icons">remove</span></div>
+								<div class="aside-dropdown-menu__text">정보</div>
+							</div>
+						</div>
+					</div>
+					<div class="aside-dropdown-item">
+						<div class="aside-dropdown-toggle">
+							<div class="aside-dropdown-toggle__icon"><span class="material-icons">home</span></div>
+							<div class="aside-dropdown-toggle__text">메인페이지로 이동</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="aside-other">
+			<div></div>
+		</div>
+	</aside>
+
+	<section class="section">
+		<nav class="nav">
+			<div>
+				<div class="nav-search">
+					<div class="nav-search__icon"><span class="material-icons">search</span></div>
+					<div class="nav-search__input"><input type="text" placeholder="Search..." /></div>
+				</div>
+			</div>
+			<div>
+				<div class="nav-btn-dropdown">
+					<div class="nav-btn-dropdown-item">
+						<div class="nav-btn-dropdown-toggle" onclick="dashboard_nav_btn_dropdown_toggle(event);">
+							<div class="nav-btn-dropdown-toggle__icon"><span class="material-icons">palette</span></div>
+						</div>
+						<div class="nav-btn-dropdown-content">
+							<div class="nav-btn-color">
+								<div class="nav-btn-color__light active" onclick="dashboard_nav_btn_color_toggle(event, 'light');"></div>
+								<div class="nav-btn-color__dark" onclick="dashboard_nav_btn_color_toggle(event, 'dark');"></div>
+							</div>
+						</div>
+					</div>
+					<div class="nav-btn-dropdown-item">
+						<div class="nav-btn-dropdown-toggle" onclick="dashboard_nav_btn_dropdown_toggle(event);">
+							<div class="nav-btn-dropdown-toggle__icon"><span class="material-icons">notifications_none</span></div>
+						</div>
+						<div class="nav-btn-dropdown-content">
+							<div class="nav-btn-alarm">
+								<div class="nav-btn-alarm-head">
+									<div class="nav-btn-alarm-head__text">알림</div>
+								</div>
+								<div class="nav-btn-alarm-content">
+									<div class="nav-btn-alarm-list">
+										<div class="nav-btn-alarm-info">
+											<div class="nav-btn-alarm-info__thumbs"><span class="material-icons">person</span></div>
+											<div class="nav-btn-alarm-info-content">
+												<div class="nav-btn-alarm-info__title">가입인사</div>
+												<div class="nav-btn-alarm-info__text">안녕하세요.</div>
+												<div class="nav-btn-alarm-info__caption">2분전</div>
+											</div>
+										</div>
+										<div class="nav-btn-alarm-info">
+											<div class="nav-btn-alarm-info__thumbs"><span class="material-icons">person</span></div>
+											<div class="nav-btn-alarm-info-content">
+												<div class="nav-btn-alarm-info__title">가입인사</div>
+												<div class="nav-btn-alarm-info__text">안녕하세요.</div>
+												<div class="nav-btn-alarm-info__caption">2분전</div>
+											</div>
+										</div>
+										<div class="nav-btn-alarm-info">
+											<div class="nav-btn-alarm-info__thumbs"><span class="material-icons">person</span></div>
+											<div class="nav-btn-alarm-info-content">
+												<div class="nav-btn-alarm-info__title">가입인사</div>
+												<div class="nav-btn-alarm-info__text">안녕하세요.</div>
+												<div class="nav-btn-alarm-info__caption">2분전</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="nav-btn-alarm-btn">
+									<div class="nav-btn-alarm-btn__text">자세히</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="nav-btn-dropdown-item">
+						<div class="nav-btn-dropdown-toggle" onclick="dashboard_nav_btn_dropdown_toggle(event);">
+							<div class="nav-btn-dropdown-toggle__icon"><span class="material-icons">public</span></div>
+						</div>
+						<div class="nav-btn-dropdown-content">
+							<div class="nav-btn-lang">
+								<div class="active" onclick="dashboard_nav_btn_lang_toggle(event);">
+									<div class="nav-btn-lang__thumbs"></div>
+									<div class="nav-btn-lang__text">KR</div>
+									<div class="nav-btn-lang__dot"></div>
+								</div>
+								<div onclick="dashboard_nav_btn_lang_toggle(event);">
+									<div class="nav-btn-lang__thumbs"></div>
+									<div class="nav-btn-lang__text">JP</div>
+									<div class="nav-btn-lang__dot"></div>
+								</div>
+								<div onclick="dashboard_nav_btn_lang_toggle(event);">
+									<div class="nav-btn-lang__thumbs"></div>
+									<div class="nav-btn-lang__text">CH</div>
+									<div class="nav-btn-lang__dot"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="nav-account-dropdown">
+					<div class="nav-account-dropdown-item">
+						<div class="nav-account-dropdown-toggle" onclick="dashboard_nav_account_dropdown_toggle(event);">
+							<div class="nav-account-dropdown-toggle__thumbs"><span class="material-icons">person</span></div>
+							<div class="nav-account-dropdown-toggle__icon"><span class="material-icons">expand_more</span></div>
+						</div>
+						<div class="nav-account-dropdown-content">
+							<div class="nav-account-info">
+								<div class="nav-account-info-profile">
+									<div class="nav-account-info-profile__thumbs"><span class="material-icons">person</span></div>
+									<div class="nav-account-info-profile-content">
+										<div class="nav-account-info-profile__title">홍길동</div>
+										<div class="nav-account-info-profile__caption">user0001@mail.com</div>
+									</div>
+								</div>
+
+								<div class="aside-dropdown">
+									<div class="aside-dropdown-list">
+
+										<div class="aside-dropdown-item">
+											<div class="aside-dropdown-toggle">
+												<div class="aside-dropdown-toggle__icon"><span class="material-icons">manage_accounts</span></div>
+												<div class="aside-dropdown-toggle__text">내 계정 설정</div>
+											</div>
+										</div>
+										<div class="aside-dropdown-item">
+											<div class="aside-dropdown-toggle">
+												<div class="aside-dropdown-toggle__icon"><span class="material-icons">sell</span></div>
+												<div class="aside-dropdown-toggle__text">플랜</div>
+											</div>
+										</div>
+										<div class="aside-dropdown-item">
+											<div class="aside-dropdown-toggle">
+												<div class="aside-dropdown-toggle__icon"><span class="material-icons">query_stats</span></div>
+												<div class="aside-dropdown-toggle__text">통계</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+								<div class="aside-dropdown">
+									<div class="aside-dropdown-list">
+
+										<div class="aside-dropdown-item">
+											<a href="#" class="aside-dropdown-toggle">
+												<div class="aside-dropdown-toggle__icon"><span class="material-icons">logout</span></div>
+												<div class="aside-dropdown-toggle__text">로그아웃</div>
+											</a>
+										</div>
+
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<article class="article">
+			<div class="article-content">
+				@Body
+			</div>
+			<footer class="footer">
+				<div>
+					<div class="footer-copyright">© Copyright MadeInReal 2024, All Right Reserverd</div>
+				</div>
+				<div>
+					<div class="footer-link">
+						<a href="#">문서</a>
+						<a href="#">도움말</a>
+					</div>
+				</div>
+			</footer>
+		</article>
+	</section>
+</main>

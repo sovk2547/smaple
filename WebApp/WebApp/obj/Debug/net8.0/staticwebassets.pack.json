@@ -1,0 +1,109 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Home\\Desktop\\2024.12.28\\Project\\MIR\\WebApp\\WebApp\\wwwroot\\css\\font.css",
+      "PackagePath": "staticwebassets\\css\\font.css"
+    },
+    {
+      "Id": "C:\\Users\\Home\\Desktop\\2024.12.28\\Project\\MIR\\WebApp\\WebApp\\wwwroot\\css\\font.min.css",
+      "PackagePath": "staticwebassets\\css\\font.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Home\\Desktop\\2024.12.28\\Project\\MIR\\WebApp\\WebApp\\wwwroot\\css\\font.scss",
+      "PackagePath": "staticwebassets\\css\\font.scss"
+    },
+    {
+      "Id": "C:\\Users\\Home\\Desktop\\2024.12.28\\Project\\MIR\\WebApp\\WebApp\\wwwroot\\css\\layout.css",
+      "PackagePath": "staticwebassets\\css\\layout.css"
+    },
+    {
+      "Id": "C:\\Users\\Home\\Desktop\\2024.12.28\\Project\\MIR\\WebApp\\WebApp\\wwwroot\\css\\layout.min.css",
+      "PackagePath": "staticwebassets\\css\\layout.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Home\\Desktop\\2024.12.28\\Project\\MIR\\WebApp\\WebApp\\wwwroot\\css\\layout.scss",
+      "PackagePath": "staticwebassets\\css\\layout.scss"
+    },
+    {
+      "Id": "C:\\Users\\Home\\Desktop\\2024.12.28\\Project\\MIR\\WebApp\\WebApp\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\Home\\Desktop\\2024.12.28\\Project\\MIR\\WebApp\\WebApp\\wwwroot\\css\\main.min.css",
+      "PackagePath": "staticwebassets\\css\\main.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Home\\Desktop\\2024.12.28\\Project\\MIR\\WebApp\\WebApp\\wwwroot\\css\\main.scss",
+      "PackagePath": "staticwebassets\\css\\main.scss"
+    },
+    {
+      "Id": "C:\\Users\\Home\\Desktop\\2024.12.28\\Project\\MIR\\WebApp\\WebApp\\wwwroot\\css\\web.min.css",
+      "PackagePath": "staticwebassets\\css\\web.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Home\\Desktop\\2024.12.28\\Project\\MIR\\WebApp\\WebApp\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Home\\Desktop\\2024.12.28\\Project\\MIR\\WebApp\\WebApp\\wwwroot\\font\\Pretendard-Black.woff",
+      "PackagePath": "staticwebassets\\font\\Pretendard-Black.woff"
+    },
+    {
+      "Id": "C:\\Users\\Home\\Desktop\\2024.12.28\\Project\\MIR\\WebApp\\WebApp\\wwwroot\\font\\Pretendard-Bold.woff",
+      "PackagePath": "staticwebassets\\font\\Pretendard-Bold.woff"
+    },
+    {
+      "Id": "C:\\Users\\Home\\Desktop\\2024.12.28\\Project\\MIR\\WebApp\\WebApp\\wwwroot\\font\\Pretendard-ExtraBold.woff",
+      "PackagePath": "staticwebassets\\font\\Pretendard-ExtraBold.woff"
+    },
+    {
+      "Id": "C:\\Users\\Home\\Desktop\\2024.12.28\\Project\\MIR\\WebApp\\WebApp\\wwwroot\\font\\Pretendard-ExtraLight.woff",
+      "PackagePath": "staticwebassets\\font\\Pretendard-ExtraLight.woff"
+    },
+    {
+      "Id": "C:\\Users\\Home\\Desktop\\2024.12.28\\Project\\MIR\\WebApp\\WebApp\\wwwroot\\font\\Pretendard-Light.woff",
+      "PackagePath": "staticwebassets\\font\\Pretendard-Light.woff"
+    },
+    {
+      "Id": "C:\\Users\\Home\\Desktop\\2024.12.28\\Project\\MIR\\WebApp\\WebApp\\wwwroot\\font\\Pretendard-Medium.woff",
+      "PackagePath": "staticwebassets\\font\\Pretendard-Medium.woff"
+    },
+    {
+      "Id": "C:\\Users\\Home\\Desktop\\2024.12.28\\Project\\MIR\\WebApp\\WebApp\\wwwroot\\font\\Pretendard-Regular.woff",
+      "PackagePath": "staticwebassets\\font\\Pretendard-Regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\Home\\Desktop\\2024.12.28\\Project\\MIR\\WebApp\\WebApp\\wwwroot\\font\\Pretendard-SemiBold.woff",
+      "PackagePath": "staticwebassets\\font\\Pretendard-SemiBold.woff"
+    },
+    {
+      "Id": "C:\\Users\\Home\\Desktop\\2024.12.28\\Project\\MIR\\WebApp\\WebApp\\wwwroot\\font\\Pretendard-Thin.woff",
+      "PackagePath": "staticwebassets\\font\\Pretendard-Thin.woff"
+    },
+    {
+      "Id": "C:\\Users\\Home\\Desktop\\2024.12.28\\Project\\MIR\\WebApp\\WebApp\\wwwroot\\js\\web.js",
+      "PackagePath": "staticwebassets\\js\\web.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.WebApp.props",
+      "PackagePath": "build\\WebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.WebApp.props",
+      "PackagePath": "buildMultiTargeting\\WebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.WebApp.props",
+      "PackagePath": "buildTransitive\\WebApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
